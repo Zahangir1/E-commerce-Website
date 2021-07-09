@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c62e46193c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>SignIn</title>
+    
+</head>
+
+<body>
+    <div class="card">
+        <a href="index.html" class="cross-btn"><i class="fa fa-times" aria-hidden="true"></i>
+        </a>
+        <div class="container">
+    <div class="registration_form">
+        <form id=demoForm1 action="" onclick="return formValidation();">
+        <h3>Sign in to your account</h3>
+        <div class="sign_form">
+            <!--<label for="email"><strong>Email</strong></label>-->
+            <input type="text" name="email" class="email" placeholder="E-mail" required>
+            <br><br>
+            <!--<label for="psw"><strong>Password</strong></label>-->
+            <input type="password" name="password" class="paw" placeholder="Password" required><br><br>
+            <p class="forgot_psw"><a href="pass_reset.html">Forgot your password?</a></p>
+            <button class="btn" type="submit" value="submit"><h4>Sign In</h4></button>
+        </div>
+        </form>
+            <div class="check">
+                <input type="checkbox" id="keep_me" name="keep_me" value="signed_in">
+                <label for="keep_me"> Keep me signed in</label>
+           </div>
+        <div class="container_signin">
+            <p class="no_account">Don't have an account?</p>
+        </div>
+        <div class="sign_form">
+            <button class="btn" type="submit"><a href="signup.html"><h4 style="color:#fff;">Create new account</h4></a></button>
+        </div>
+        </form>
+        <div class="alternative">
+            <h2 class="or">Or Sign In Using</h2>
+        </div>
+
+        <div class="social_signin">
+            &nbsp &nbsp  &nbsp &nbsp  &nbsp &nbsp  &nbsp &nbsp  &nbsp &nbsp  &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp
+            <button class="facebook" type="submit"><a href="https://www.facebook.com/"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+            </button> &nbsp &nbsp
+            <button class="google" type="submit"><a href="https://gmail.com/"><i class="fa fa-google" aria-hidden="true"></i></a>
+            <!--<h3>Sign Up with Google</h3>-->
+            </button> &nbsp &nbsp
+            <button class="twitter" type="submit"><a href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </button>
+        </div>
+
+        <p class="terms">By continuing, you agree to the <a href="#"><b>Terms of Service</b></a> & <a href=#"><b>Privacy Policy</b></a>.</p>
+   
+    </div>
+</div>
+</div>
+
+
+
+
+ <!-- Javascript -->
+ <script src="main.js"></script>
+
+</body>
+</html>

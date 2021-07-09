@@ -1,0 +1,359 @@
+/* Index */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body{
+    font-family: 'poppins',sans-serif;
+
+}
+#bg-color{
+    background-color: #fff;
+}
+#shopping-bag i{
+    line-height: 50px;
+}
+
+h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+h2{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+h3{
+    font-size:1.4rem;
+    font-weight: 800;
+}
+
+h4{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+h5{
+    font-size:1rem;
+    font-weight: 400;
+    color:black;
+}
+
+h6{
+    color:lightgray;
+}
+button:hover{
+    background-color:black;
+}
+hr{
+    width: 50px;
+    height: 2px;
+    background-color: coral;
+}
+
+/* Search Button */
+.button {
+    border-radius: 25px;
+	line-height: 50px;
+	text-align: center;
+	color:black;
+	text-decoration: none;
+	cursor: pointer;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.button:hover {
+	transition-duration: 0.4s;
+	-moz-transition-duration: 0.4s;
+	-webkit-transition-duration: 0.4s;
+	-o-transition-duration: 0.4s;
+	color:coral;
+}
+
+.search-container {
+	position: relative;
+	display: inline-block;
+	margin: 4px 2px;
+	height: 50px;
+	width: 50px;
+	vertical-align: bottom;
+}
+.searchbutton {
+	position: absolute;
+	font-size: 22px;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.search:focus + .searchbutton {
+	transition-duration: 0.4s;
+	-moz-transition-duration: 0.4s;
+	-webkit-transition-duration: 0.4s;
+	-o-transition-duration: 0.4s;
+	/* background-color: white; */
+	/* color: black; */
+}
+
+.search {
+	position: absolute;
+	left: 49px; 
+	background-color: white;
+	outline: none;
+	border: none;
+	padding: 0;
+	width: 0;
+	height: 100%;
+	z-index: 10;
+	transition-duration: 0.4s;
+	-moz-transition-duration: 0.4s;
+	-webkit-transition-duration: 0.4s;
+	-o-transition-duration: 0.4s;
+}
+
+.search:focus {
+	width: 350px; 
+	padding: 0 16px 0 0;
+}
+
+.expandright {
+	left: auto;
+	right: 49px; 
+}
+
+.expandright:focus {
+	padding: 0 0 0 16px;
+}
+
+
+
+/* star */
+.star{
+    padding: 10px 0;
+}
+.star i{
+    font-size: 0.8rem;
+    color: goldenrod; 
+}
+
+.navbar{
+    font-size: 18px;
+    top: 0;
+    left: 0;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-light .navbar-nav .nav-item .nav-link{
+    margin-top: 15px;
+    padding: 0 20px;
+    color:black;
+    transition: 0.3sec;
+}
+
+.navbar-light .navbar-nav .nav-item .nav-link:hover,
+.navbar i:hover,
+.navbar-light .navbar-nav .nav-item .nav-link.active{
+    color:coral;
+}
+
+.navbar i{
+    font-size:1.2rem;
+    padding: 0 7px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.navbar img{
+    width: 50px;
+    height: auto;
+    margin-left: 15px;
+}
+
+/* Mobile Nav */
+.navbar-light .navbar-toggler{
+    border:none;
+    outline:none;
+}
+#bar{
+    font-size:1.5rem;
+    padding:7px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3sec;
+    color:black;
+}
+#bar:hover,
+#bar.active{
+    color:#fff;
+}
+
+@media only screen and (max-width: 991px) {
+    body > div > nav > div > button :hover,
+    body > div > nav > div > button :focus{
+        background-color:coral;
+    }
+    body > div > nav > div > button :hover #bar,
+    body > div > nav > div > button :focus #bar{
+        color:#fff;
+    }
+    #navbarSupportedContent > ul{
+        margin: 1rem;
+        justify-content: flex-end;
+        align-items: flex-end;
+        text-align: right;
+    }
+    #navbarSupportedContent > ul > li:nth-child(0) > a{
+        padding: 100px 0;
+    }
+}
+
+.home{
+    background-image:url(img/back1.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: top center;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.home span{
+    color:coral;
+}
+button{
+    font-size: 0.8rem;
+    font-weight: 800;
+    outline: none;
+    border: none;
+    background-color:coral;
+    color:aliceblue;
+    padding: 13px 25px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+#new .one img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#new .one .details{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: 0.3sec;
+}
+#new .one:hover .details{
+    cursor: pointer;
+    background-color: rgba(245, 178, 178, 0.7);
+}
+#new .one .details button{
+    display: inline-block;
+    font-size:14px;
+    font-weight: 500;
+    color: black;
+    background: none;
+    text-transform: uppercase;
+    border-bottom: 1px solid black;
+    padding: 2.5px;
+    transform: translateY(70px);
+    transition: 0.3sec;
+}
+#new .one .details button:hover{
+    color:#fff;
+    border-bottom: 1px solid #fff;
+}
+#new .one:nth-child(n) .details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Product */
+.product{
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+.product img{
+    transiton: 0.3sec all;
+}
+.product:hover img{
+    opacity: 0.7;
+}
+.product .buy-btn{
+    background:coral;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: 0.3sec all;
+}
+.product:hover .buy-btn{
+    transform:translateY(0);
+    opacity: 1;
+}
+#banner{
+    background-image :url(img/banner/2.jpg);
+    width: 100%;
+    height:60vh;
+    background-size: cover;
+    background-position: top 70px center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+#banner h4{
+    color:aliceblue;
+}
+#banner h1{
+    color:#fff;
+}
+#banner button{
+    background-color: coral;
+}
+footer{
+background-color: black;
+}
+footer h5{
+    color:#d8d8d8;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+footer h6{
+    color:aliceblue;
+}
+footer li a{
+    font-size: 0.8rem;
+    color: #999;
+}
+footer li a:hover{
+    color:#d8d8d8;
+}
+footer p{
+    color: #999;
+    font-size: 0.8rem;
+}
+footer .copyright a{
+    color:black;
+    width:38px;
+    height: 38px;
+    background-color:#ffff;
+    display: inline-block;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 50%;
+    transition: 0.3sec;
+    margin: 0 5px;
+}

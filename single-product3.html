@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <!-- css -->
+    <link rel="stylesheet" href="style1.css">
+     <!-- Bootstraps-css -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+     <!-- Font Awesome -->
+     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+     
+     <style>
+         .small-img-group{
+             display: flex;
+             justify-content: space-between;
+         }
+
+         .small-img-col{
+             flex-basis: 24%;
+             cursor: pointer;
+         }
+         .single-product select{
+             display: block;
+             padding: 5px 10px;
+         }
+         .single-product input{
+             width: 50px;
+             height: 40px;
+             padding-left: 10px;
+             font-size: 16px;
+             margin-right: 10px;
+         }
+         .small-product input:focus{
+             outline: none;
+         }
+         .buy-btn{
+             background-color: coral;
+             opacity: 1;
+             transition: 0.3sec;
+         }
+     </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light py-3 fixed-top" id="bg-color">
+        <div class="container">
+         <img src="img/logos1.png" alt="">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span><i id="bar" class="fas fa-bars"></i></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                 <li class="nav-item">
+                    <a class="nav-link active" href="shop.html">Shop</a>
+                 </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="#">Men</a>
+                 </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="#">Women</a>
+                 </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="#">Kids</a>
+                 </li> 
+                 <li class="nav-item">
+                      <a class="nav-link" href="#">Blog</a>
+                 </li>
+                 <li class="nav-item">
+                      <a class="nav-link" href="#">About</a>
+                 </li>
+                 <li class="nav-item">
+                      <a class="nav-link" href="#">Contact</a>
+                 </li>
+                 <li class="nav-item">
+                    <div class="search-container">
+                        <input class="search expandright" id="searchright" type="search" name="q" placeholder="Search">
+                        <label class="button searchbutton" for="searchright"><nav><i class="fa fa-search" aria-hidden="true"></i></nav></label>
+                    </div>
+                 </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="signin.html"><i class="fas fa-user-circle"></i>
+                    </a>
+                 </li>
+                 <li class="nav-item" id="shopping-bag">
+                      <i class="fa fa-shopping-bag" aria-hidden="true" id="shopping-bag"></i>
+                 </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <section class="container single-product my-5 pt-5">
+          <div class="row mt-5">
+              <!-- img3 -->
+              <div class="col-lg-5 col-md-12 col-12">
+                <img class="img-fluid w-100 pb-1" src="img/shop/3.jpg" alt="" id="MainImg">
+
+                <div class="small-img-group">
+                    <div class="small-img-col">
+                        <img  class="small-img" width="100%" src="img/shop/3.jpg" alt="">
+                    </div>
+                    <div class="small-img-col">
+                      <img  class="small-img" width="100%" src="img/shop/27.jpg" alt="">
+                  </div>
+                  <div class="small-img-col">
+                      <img  class="small-img" width="100%" src="img/shop/28.jpg" alt="">
+                  </div>
+                  <div class="small-img-col">
+                      <img  class="small-img" width="100%" src="img/shop/29.jpg" alt="">
+                  </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-12 col-12">
+                <h6>Home/T-Shirt</h6>
+                <h3 class="py-4">School's Bag</h3>
+                <h2>$112.00</h2>
+                <select class="my-3" name="" id="">
+                    <option value="">Select Size</option>
+                    <option value="">L</option>
+                    <option value="">XL</option>
+                    <option value="">XXL</option>
+                    <option value="">Small</option>
+                    <option value="">Large</option>
+                </select>
+                <input type="number" value="1">
+                <button class="buy-btn">Add To Cart</button>
+                <h4 class="mt-5 mb-5">Product Details</h4>
+                <span>
+                  In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.
+                </span>
+            </div>
+
+              <!-- Related Products -->
+              <section id="featured" class="my-5 pb-5">
+                <div class="container text-center mt-5 py-5">
+                    <h3>Related Products</h3>
+                    <hr class="mx-auto">
+                    <p>Here you can check out our new products with fair price.</p>
+                </div> 
+                <div class="row mx-auto container-fluid">
+                    <div onclick="window.location.href='related-product1.html';" class="product text-center col-lg-3 col-md-4 col-12">
+                        <img class="img-fluid" src="img/featured/1.jpg" alt="">
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h5 class="p-name">Sport Boots</h5>
+                        <h4 class="p-price">$92.00</h4>
+                        <button class="buy-btn">Buy Now</button>
+                    </div>
+                    <div onclick="window.location.href='related-product2.html';" class="product text-center col-lg-3 col-md-4 col-12">
+                        <img class="img-fluid" src="img/featured/2.jpg" alt="">
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h5 class="p-name">Sport Boots</h5>
+                        <h4 class="p-price">$92.00</h4>
+                        <button class="buy-btn">Buy Now</button>
+                    </div>
+                    <div onclick="window.location.href='related-product3.html';" class="product text-center col-lg-3 col-md-4 col-12">
+                        <img class="img-fluid" src="img/featured/3.jpg" alt="">
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h5 class="p-name">Sport Boots</h5>
+                        <h4 class="p-price">$92.00</h4>
+                        <button class="buy-btn">Buy Now</button>
+                    </div>
+                    <div class="product text-center col-lg-3 col-md-4 col-12">
+                        <img class="img-fluid" src="img/featured/4.jpg" alt="">
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h5 class="p-name">Sport Boots</h5>
+                        <h4 class="p-price">$92.00</h4>
+                        <button class="buy-btn">Buy Now</button>
+                    </div>
+                </div>
+            </section>
+
+          </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="mt-5 py-5">
+        <div class="row container mx-auto pt-5">
+            <div class="footer-one col-lg-3 col-md-6 col-12">
+            <img src="img/logos1.png" alt="">
+            <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate.In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate.</p>
+            </div>
+            <div class="footer-one col-lg-3 col-md-6 col-12">
+                <h5 class="pb-2">Featured</h5>
+                <ul class="text-uppercase list-unstyled">
+                    <li><a href="">Men</a></li>
+                    <li><a href="">Women</a></li>
+                    <li><a href="">Boys</a></li>
+                    <li><a href="">Girls</a></li>
+                    <li><a href="">New Arrivals</a></li>
+                    <li><a href="">Shoes</a></li>
+                    <li><a href="">clothes</a></li>
+                </ul>
+            </div>
+            <div class="footer-one col-lg-3 col-md-6 col-12">
+                <h5 class="pb-2">Contact Us</h5>
+                <div>
+                    <h6 class="text-uppercase">Address</h6>
+                    <p class="text-nowrap">Airport Road,Dhaka-1229,Bangladesh</p>
+                </div>
+                <div>
+                    <h6 class="text-uppercase">Phone</h6>
+                    <p>(+880)1345482181</p>
+                </div>
+                <div>
+                    <h6 class="text-uppercase">Email</h6>
+                    <p class="text-lowercase">abc@example.com</p>
+                </div>
+            </div>
+            <div class="footer-one col-lg-3 col-md-6 col-12">
+                <h5 class="pb-2">Instagram</h5>
+                <div class="row">
+                    <img  class="img-fluid w-25 h-100 m-2" src="img/insta/1.jpg" alt="">
+                    <img  class="img-fluid w-25 h-100 m-2" src="img/insta/2.jpg" alt="">
+                    <img  class="img-fluid w-25 h-100 m-2" src="img/insta/3.jpg" alt="">
+                    <img  class="img-fluid w-25 h-100 m-2" src="img/insta/4.jpg" alt="">
+                    <img  class="img-fluid w-25 h-100 m-2" src="img/insta/5.jpg" alt="">
+                    <img  class="img-fluid w-25 h-100 m-2" src="img/insta/6.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="copyright mt-5">
+            <div class="row container mx-auto">
+                <div class="col-lg-3 col-md-6 col-12 mb-4">
+                    <img src="img/payment.png" alt="">
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 mb-2">
+                   <p class="text-nowrap">eCommerce © 2021. All Rights Reserved</p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+     <!--JavaScripts  -->
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+    <!-- Javascript -->
+    <script src="main.js"></script>
+
+</body>
+</html>
